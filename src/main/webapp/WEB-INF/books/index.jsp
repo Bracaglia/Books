@@ -35,6 +35,7 @@
                 <th>Id</th>
                 <th>Title</th>
                 <th>Author</th>
+                <th>Created by</th>
             </tr>
             </thead>
             <tbody>
@@ -46,7 +47,8 @@
                             <c:out value="${book.title}"></c:out></a>
                         </td>
                         <td><c:out value="${book.author}"></c:out></td>
-                </c:forEach>
+                        <td><c:out value="${book.user.userName}"></c:out></td>
+                    </c:forEach>
             </tbody>
 
         </table>

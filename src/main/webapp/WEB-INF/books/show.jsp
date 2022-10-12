@@ -27,6 +27,7 @@
         <a class="float-end" href="/books">back to shelve</a>
     </div>
     <p>${book.user.getUserName()} read ${book.title} by ${book.author}</p>
+    <h4>What were your thoughts after you finished the book?</h4>
     <p>${book.myThoughts}</p>
     <c:if test="${user.getId() == book.user.getId()}">
     <a href="/books/edit/${book.id}">Edit</a>
